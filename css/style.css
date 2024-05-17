@@ -13,12 +13,34 @@ body {
 }
 .header .logo {
     background-color: #ccc;
-    padding: 10px;
+    padding: 5px;
+    max-width: 120px;
 }
+
 .header nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
+    color: purple;  
+}
+
+.purple-bar {
+    background-color: #8a2be2; /* Purple color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.purple-bar nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white; /* White text color */
+    font-weight: bold;
+}
+
+.achtergrond {
+    background-image: url("../images/man.jpg");
+    background-size: cover;
+    background-position: 0px 0px;
+    height: 400px;
 }
 .main {
     padding: 20px;
@@ -29,15 +51,30 @@ body {
 .slogan-section img, .deal-section img, .steps-section img {
     display: block;
     margin: 10px auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.slogan-section img:hover, .deal-section img:hover, .steps-section img:hover {
+    transform: scale(1.05);
 }
 .slogan-section .slogan, .deal-section .deal, .steps-section .step {
     text-align: center;
 }
-.slogan-section .slogan button, .deal-section .deal button {
-    background-color: #ccc;
+.button, .slogan-section .slogan button, .deal-section .deal button, .steps-section .step button {
+    display: inline-block;
+    background-color: purple;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+.button:hover, .slogan-section .slogan button:hover, .deal-section .deal button:hover, .steps-section .step button:hover {
+    background-color: #8a2be2;
 }
 .steps-section {
     display: flex;
@@ -48,6 +85,15 @@ body {
 }
 .footer {
     padding: 20px;
-    background-color: #f0f0f0;
+    color: white;
+    background-color: purple;
     text-align: center;
+    font-size: 18px;
 }
+.separator {
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 80%;
+}
+    

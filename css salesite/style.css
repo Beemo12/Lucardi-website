@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.header .logo {
+    background-color: #ccc;
+    padding: 5px;
+    max-width: 120px;
+}
+.header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: purple;
+}
+.purple-bar {
+    background-color: #8a2be2; /* Purple color */
+    padding: 10px 0;
+    text-align: center;
+}
+.purple-bar nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white; /* White text color */
+    font-weight: bold;
+}
+.main {
+    display: flex;
+    padding: 20px;
+}
+.sidebar {
+    width: 20%;
+    padding-right: 20px;
+}
+.sidebar .filter h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.sidebar .filter ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar .filter ul li {
+    margin-bottom: 10px;
+}
+.sidebar .filter ul li a {
+    text-decoration: none;
+    color: #555;
+}
+.product-list {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product-item {
+    width: 22%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.product-item:hover {
+    transform: scale(1.05);
+}
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+.product-item h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+.product-item .price {
+    font-size: 16px;
+    color: #e60000;
+    margin: 10px 0;
+}
+.product-item .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+}
+.product-item .discount {
+    background-color: #ff66b2;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.footer {
+    padding: 20px;
+    color: white;
+    background-color: purple;
+    text-align: center;
+    font-size: 18px;
+}
