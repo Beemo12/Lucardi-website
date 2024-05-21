@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zomer Sale 2024</title>
     <link rel="stylesheet" href="css salesite/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
-            <img src="images/logo.png" alt="logo" width="100" height="auto">        
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" width="100" height="auto">
+            </a>
         </div>
         <nav>
             <a href="#">CART</a>
@@ -17,7 +21,7 @@
             <a href="index.html">HOME</a>
         </nav>
     </header>
-
+    <div id="cart-contents" class="cart-contents"></div>
     <div class="purple-bar">
         <nav>
             <a href="salesite.html">ZOMER SALE 2024 KORTING TOT 70%!</a>
@@ -61,6 +65,8 @@
                 <p>Seen </p>
                 <p>Staal</p>
                 <p>Unisex </p>
+                <button class="add-to-cart" data-product-id="1" data-product-name="Seen Bril"
+                    data-product-price="17.49">Add to Cart</button>
             </div>
             <div class="product-item">
                 <img src="product images/Oakley.png" alt="Oakley bril">
@@ -70,6 +76,8 @@
                 <p>Oakley</p>
                 <p>Staal</p>
                 <p>Dames</p>
+                <button class="add-to-cart" data-product-id="3" data-product-name="Oakley Bril"
+                    data-product-price="20.99">Add to Cart</button>
             </div>
             <div class="product-item">
                 <img src="product images/Ferraria.png" alt="Ferrari Bril">
@@ -79,6 +87,8 @@
                 <p>Ferrari</p>
                 <p>Staal</p>
                 <p>Heren</p>
+                <button class="add-to-cart" data-product-id="2" data-product-name="Ferrari Bril"
+                    data-product-price="24.49">Add to Cart</button>
             </div>
             <div class="product-item">
                 <img src="product images/burberry.png" alt="Burberry Bril">
@@ -88,6 +98,8 @@
                 <p>Burberry</p>
                 <p>Staal</p>
                 <p>Heren</p>
+                <button class="add-to-cart" data-product-id="4" data-product-name="Burberry Bril"
+                    data-product-price="44.99">Add to Cart</button>
             </div>
         </section>
     </main>
@@ -95,5 +107,7 @@
     <footer class="footer">
         www.lucardi.nl scoort een 4.59 / 5 op basis van 16247 reviews bij Trusted Shops.
     </footer>
+    <script src="cart.js"></script>
 </body>
+
 </html>
