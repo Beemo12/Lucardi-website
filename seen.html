@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucardi</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css product/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" width="100" height="auto">
+            </a>
+        </div>
+        <nav>
+            <a href="#">CART</a>
+            <a href="salesite.html">SALE</a>
+            <a href="index.html">HOME</a>
+        </nav>
+    </header>
+    <div id="cart-contents" class="cart-contents"></div>
+    <div class="purple-bar">
+        <nav>
+            <a href="salesite.html">ZOMER SALE 2024 KORTING TOT 70%!</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="image-gallery">
+            <img src="product images/seen sn.png" alt="Jewelry Set" class="main-image">
+            <div class="thumbnails">
+                <img src="seen/seen1.png" alt="Thumbnail 1">
+                <img src="seen/seen2.png" alt="Thumbnail 2">
+                <img src="seen/seen3.png" alt="Thumbnail 3">
+                <img src="seen/seen4.png" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Seen Bril</h1>
+            <div class="reviews">
+                <span class="stars">★★★★★</span>
+            </div>
+            <p>Is het tijd voor een (nieuwe) bril? Misschien is dit wel het montuur dat je zoekt! Deze Seen bril is
+                ontworpen voor kinderen. Hij is donker blauw en gemaakt van metaal. De Seen SNOK0007 heeft een vierkant
+                montuur. Dit past goed bij een ronde, langwerpige, ovale of hartvormige gezichtsvorm. Voldoet de Seen
+                SNOK0007 aan jouw wensen en ligt jouw sterkte tussen -5 en +5? Bestel ‘m dan direct online! Is je
+                sterkte hoger of wil je een multifocale bril? Kom dan langs in één van onze winkels. We staan voor je
+                klaar. </p>
+            <div class="price-info">
+                <span class="old-price">24,99</span>
+                <span class="new-price">17,49</span>
+                <div class="member-price">
+                    <span>Member Prijs</span>
+                    <span class="discounted-price">15.49</span>
+                </div>
+            </div>
+            <div class="offer">
+                <span>1+1 GRATIS</span>
+            </div>
+            <form action="cart.php" method="post">
+                <input type="hidden" name="product_id" value="4">
+                <input type="hidden" name="product_name" value="Seen Bril">
+                <input type="hidden" name="product_price" value="17.49">
+                <button type="submit">Add to Cart</button>
+            </form>
+        </div>
+    </div>
+    <div class="separator"></div>
+
+    </main>
+
+    <footer class="footer">
+        www.lucardi.nl scoort een 4.59 / 5 op basis van 16247 reviews bij Trusted Shops.
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

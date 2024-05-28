@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucardi</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css product/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" width="100" height="auto">
+            </a>
+        </div>
+        <nav>
+            <a href="#">CART</a>
+            <a href="salesite.html">SALE</a>
+            <a href="index.html">HOME</a>
+        </nav>
+    </header>
+    <div id="cart-contents" class="cart-contents"></div>
+    <div class="purple-bar">
+        <nav>
+            <a href="salesite.html">ZOMER SALE 2024 KORTING TOT 70%!</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="image-gallery">
+            <img src="product images/Oakley.png" alt="Jewelry Set" class="main-image">
+            <div class="thumbnails">
+                <img src="oakley/oakley1.png" alt="Thumbnail 1">
+                <img src="oakley/oakley2.png" alt="Thumbnail 2">
+                <img src="oakley/oakley3.png" alt="Thumbnail 3">
+                <img src="oakley/oakley4.png" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Oakley Bril</h1>
+            <div class="reviews">
+                <span class="stars">★★★★★</span>
+            </div>
+            <p>Is het tijd voor een (nieuwe) bril? Misschien is dit wel het montuur dat je zoekt! Deze Oakley bril is
+                ontworpen voor heren. Hij is zwart en gemaakt van nylon & propionaat. De Oakley Bril 3 heeft een
+                rechthoekig montuur. Dit past goed bij een ovale of ronde gezichtsvorm. Voldoet de Oakley Bril
+                aan jouw wensen en ligt jouw sterkte tussen -5 en +5? Bestel ‘m dan direct online! Is je sterkte hoger
+                of wil je een multifocale bril? Kom dan langs in één van onze winkels. We staan voor je klaar. </p>
+            <div class="price-info">
+                <span class="old-price">29,99</span>
+                <span class="new-price">20,99</span>
+                <div class="member-price">
+                    <span>Member Prijs</span>
+                    <span class="discounted-price">18.49</span>
+                </div>
+            </div>
+            <div class="offer">
+                <span>1+1 GRATIS</span>
+            </div>
+            <form action="cart.php" method="post">
+                <input type="hidden" name="product_id" value="3">
+                <input type="hidden" name="product_name" value="Oakley Bril">
+                <input type="hidden" name="product_price" value="20.99">
+                <button type="submit">Add to Cart</button>
+            </form>
+        </div>
+    </div>
+    <div class="separator"></div>
+
+    </main>
+
+    <footer class="footer">
+        www.lucardi.nl scoort een 4.59 / 5 op basis van 16247 reviews bij Trusted Shops.
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
