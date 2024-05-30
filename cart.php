@@ -47,7 +47,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remove') {
     <header class="header">
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo.png" alt="logo" width="100" height="auto">
+                <img src="images/logo.svg" alt="logo" width="100" height="auto">
             </a>
         </div>
         <nav>
