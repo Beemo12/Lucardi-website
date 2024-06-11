@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header {
@@ -14,8 +17,6 @@ body {
 }
 
 .header .logo {
-    background-color: #ccc;
-    padding: 5px;
     max-width: 120px;
 }
 
@@ -23,6 +24,20 @@ body {
     margin: 0 15px;
     text-decoration: none;
     color: purple;
+    font-weight: bold;
+}
+
+.header #search-bar {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 200px;
+    transition: width 0.4s ease-in-out;
+}
+
+.header #search-bar:focus {
+    width: 300px;
+    outline: none;
 }
 
 .header .hamburger {
@@ -49,6 +64,8 @@ body {
 .main {
     display: flex;
     padding: 20px;
+    flex: 1;
+    justify-content: center;
 }
 
 .sidebar {
@@ -74,6 +91,7 @@ body {
 .sidebar .filter ul li a {
     text-decoration: none;
     color: #555;
+    font-weight: bold;
 }
 
 .product-list {
@@ -81,16 +99,24 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .product-item {
-    width: 22%;
+    width: 250px;
+    height: 400px;
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
     position: relative;
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-item:hover {
@@ -99,13 +125,14 @@ body {
 
 .product-item img {
     max-width: 100%;
-    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
-.product-item h3 {
-    font-size: 14px;
-    color: #333;
-    margin: 10px 0;
+.product-item h3,
+.product-item p {
+    margin: 5px 0;
 }
 
 .product-item .price {
@@ -137,6 +164,7 @@ body {
     background-color: purple;
     text-align: center;
     font-size: 18px;
+    margin-top: auto;
 }
 
 @media (max-width: 768px) {
@@ -189,6 +217,11 @@ body {
     .product-item {
         width: 48%;
         margin-bottom: 10px;
-        
+    }
+    .header #search-bar {
+        padding: 5px;
+        margin-left: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
     }
 }
