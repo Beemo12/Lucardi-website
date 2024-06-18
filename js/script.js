@@ -28,3 +28,4 @@ document.getElementById('search-bar').addEventListener('input', function() {
         }
     });
 });
+

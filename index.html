@@ -43,8 +43,7 @@
 
         <section class="deal-section">
             <div class="deal">
-                <img src="images/glasses 3.jpg" alt="Image placeholder">
-                <h2>Korting op elke 2e bril</h2>
+                <img src="images/glasses 3.jpg" alt="Image placeholder" onclick="openModal('modal1', 'images/glasses 3.jpg', 'Korting op elke 2e bril')">
                 <p>Er is een tijdelijke korting voor alle 2e bril die je haalt van elke merk</p>
                 <a href="salesite.html" class="button">Bekijk Actie Producten</a>
             </div>
@@ -54,17 +53,17 @@
 
         <section class="steps-section">
             <div class="step">
-                <img src="images/glasses 2.jpg" alt="Image placeholder">
+                <img src="images/glasses 2.jpg" alt="Image placeholder" onclick="openModal('modal2', 'images/glasses 2.jpg', '25% KORTING OP ELKE BRIL ONDER €150')">
                 <h3>25% KORTING OP ELKE BRIL ONDER €150</h3>
                 <a href="salesite.html" class="button">Bekijk Hier</a>
             </div>
             <div class="step">
-                <img src="images/glasses 1.jpg" alt="Image placeholder">
+                <img src="images/glasses 1.jpg" alt="Image placeholder" onclick="openModal('modal3', 'images/glasses 1.jpg', '2E BRIL GRATIS BIJ AANKOOP VAN EMPORIO ARMANIA PRODUCTEN')">
                 <h3>2E BRIL GRATIS BIJ AANKOOP VAN EMPORIO ARMANIA PRODUCTEN</h3>
                 <a href="salesite.html" class="button">Bekijk Hier</a>
             </div>
             <div class="step">
-                <img src="images/glasses 2.jpg" alt="Image placeholder">
+                <img src="images/glasses 2.jpg" alt="Image placeholder" onclick="openModal('modal4', 'images/glasses 2.jpg', 'GRATIS OOG CHECK BIJ AANKOOP VAN ELKE BRIL')">
                 <h3>GRATIS OOG CHECK BIJ AANKOOP VAN ELKE BRIL</h3>
                 <a href="salesite.html" class="button">Bekijk Hier</a>
             </div>
@@ -72,9 +71,60 @@
         <div class="separator"></div>
     </main>
 
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <img class="modal-content" id="img1">
+        <div id="caption1" class="caption"></div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <img class="modal-content" id="img2">
+        <div id="caption2" class="caption"></div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <img class="modal-content" id="img3">
+        <div id="caption3" class="caption"></div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <img class="modal-content" id="img4">
+        <div id="caption4" class="caption"></div>
+    </div>
+
     <footer class="footer">
         www.lucardi.nl scoort een 4.59 / 5 op basis van 16247 reviews bij Trusted Shops.
     </footer>
+
+    <script>
+        function openModal(modalId, imgSrc, captionText) {
+            var modal = document.getElementById(modalId);
+            var modalImg = modal.querySelector('.modal-content');
+            var caption = modal.querySelector('.caption');
+
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+            caption.innerHTML = captionText;
+        }
+
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modals = document.querySelectorAll('.modal');
+            modals.forEach(function(modal) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
 
 </body>
 
