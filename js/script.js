@@ -29,3 +29,20 @@ document.getElementById('search-bar').addEventListener('input', function() {
     });
 });
 
+document.querySelectorAll('.filter-link').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        var filter = this.dataset.filter.toLowerCase();
+        var products = document.querySelectorAll('.product-item');
+
+        products.forEach(function(product) {
+            var categories = product.dataset.categories.toLowerCase();
+            
+            if (categories.includes(filter)) {
+                product.style.display = '';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    });
+});
