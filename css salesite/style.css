@@ -158,6 +158,13 @@ body {
     border-radius: 3px;
 }
 
+.product-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
 .footer {
     padding: 20px;
     color: white;

@@ -4,6 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -11,6 +12,7 @@ body {
     padding: 20px;
     background-color: #f0f0f0;
 }
+
 .header .logo {
     background-color: #ccc;
     padding: 5px;
@@ -20,11 +22,11 @@ body {
 .header nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: purple;  
+    color: purple;
 }
 
 .purple-bar {
-    background-color: #8a2be2; 
+    background-color: #8a2be2;
     padding: 10px 0;
     text-align: center;
 }
@@ -32,7 +34,7 @@ body {
 .purple-bar nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: white; 
+    color: white;
     font-weight: bold;
 }
 
@@ -42,27 +44,49 @@ body {
     background-position: 0px 0px;
     height: 400px;
 }
+
 .main {
     padding: 20px;
 }
-.slogan-section, .deal-section, .steps-section {
+
+.slogan-section,
+.deal-section,
+.steps-section {
     margin-bottom: 40px;
 }
-.slogan-section img, .deal-section img, .steps-section img {
+
+.slogan-section img,
+.deal-section img,
+.steps-section img {
     display: block;
     margin: 10px auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 1200px; 
     height: auto;
     transition: transform 0.3s ease-in-out;
+    cursor: pointer; 
 }
-.slogan-section img:hover, .deal-section img:hover, .steps-section img:hover {
+
+.sale-image {
+    max-width: 1400px;
+}
+
+.slogan-section img:hover,
+.deal-section img:hover,
+.steps-section img:hover {
     transform: scale(1.05);
 }
-.slogan-section .slogan, .deal-section .deal, .steps-section .step {
+
+.slogan-section .slogan,
+.deal-section .deal,
+.steps-section .step {
     text-align: center;
 }
-.button, .slogan-section .slogan button, .deal-section .deal button, .steps-section .step button {
+
+.button,
+.slogan-section .slogan button,
+.deal-section .deal button,
+.steps-section .step button {
     display: inline-block;
     background-color: purple;
     border: none;
@@ -73,16 +97,23 @@ body {
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
 }
-.button:hover, .slogan-section .slogan button:hover, .deal-section .deal button:hover, .steps-section .step button:hover {
+
+.button:hover,
+.slogan-section .slogan button:hover,
+.deal-section .deal button:hover,
+.steps-section .step button:hover {
     background-color: #8a2be2;
 }
+
 .steps-section {
     display: flex;
     justify-content: space-around;
 }
+
 .steps-section .step {
     width: 30%;
 }
+
 .footer {
     padding: 20px;
     color: white;
@@ -90,12 +121,14 @@ body {
     text-align: center;
     font-size: 18px;
 }
+
 .separator {
     height: 2px;
     background-color: #ccc;
     margin: 20px auto;
     width: 80%;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -143,11 +176,13 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
 @media (max-width: 768px) {
     .steps-section {
         flex-direction: column;
         align-items: center;
     }
+
     .steps-section .step {
         width: 100%;
         margin-bottom: 20px;

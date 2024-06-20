@@ -64,7 +64,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'remove') {
     <h1>Winkelmandje</h1>
 
     <?php if (!empty($_SESSION['cart'])): ?>
-        <table>
+        <table class="cart-table">
             <tr>
                 <th>Product</th>
                 <th>Prijs</th>
@@ -75,7 +75,10 @@ if (isset($_GET['action']) && $_GET['action'] == 'remove') {
             <?php $total = 0; ?>
             <?php foreach ($_SESSION['cart'] as $id => $product): ?>
                 <tr>
-                    <td><?php echo htmlspecialchars($product['name']); ?></td>
+                    <td class="product-info">
+                        <img src="<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>" class="product-img">
+                        <?php echo htmlspecialchars($product['name']); ?>
+                    </td>
                     <td><?php echo htmlspecialchars($product['price']); ?></td>
                     <td><?php echo htmlspecialchars($product['quantity']); ?></td>
                     <td><?php echo htmlspecialchars($product['price'] * $product['quantity']); ?></td>
