@@ -165,6 +165,24 @@ body {
     border-radius: 5px;
 }
 
+.cart-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.cart-button:hover {
+    background-color: purple;
+}
+
+
 .footer {
     padding: 20px;
     color: white;
